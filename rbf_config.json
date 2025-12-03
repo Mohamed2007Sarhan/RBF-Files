@@ -1,0 +1,26 @@
+{
+    "network": "mainnet",
+    "monitoring_interval": 30,
+    "fee_buffer_percentage": 10,
+    "max_rbf_attempts": 5,
+    "mempool_api": {
+        "mainnet": "https://mempool.space/api",
+        "testnet": "https://mempool.space/testnet/api"
+    },
+    "default_fees": {
+        "initial_fee_rate": 5,
+        "target_fee_rate": 20,
+        "max_fee_rate": 100
+    },
+    "security": {
+        "enable_signature_verification": true,
+        "require_rbf_signaling": true,
+        "confirmations_needed": 1
+    },
+    "logging": {
+        "level": "INFO",
+        "file": "rbf_monitor.log",
+        "max_file_size": 10485760,
+        "backup_count": 5
+    }
+}
